@@ -34,7 +34,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/lpm:/system/bin/lpm \
     $(LOCAL_PATH)/proprietary/bin/mfgloader:/system/bin/mfgloader \
     $(LOCAL_PATH)/proprietary/bin/mttlogger:/system/bin/mttlogger \
-    $(LOCAL_PATH)/proprietary/bin/rild:/system/bin/rild \
+    $(LOCAL_PATH)/proprietary/bin/rild:/system/vendor/bin/hw/rild \
     $(LOCAL_PATH)/proprietary/bin/sensord:/system/bin/sensord \
     $(LOCAL_PATH)/proprietary/bin/wlandutservice:/system/bin/wlandutservice \
     $(LOCAL_PATH)/proprietary/etc/Volume.db:/system/etc/Volume.db \
