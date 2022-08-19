@@ -14,15 +14,12 @@
 
 LOCAL_PATH := vendor/samsung/kyleproxx
 
-ifeq ($(findstring kyleprods,$(TARGET_PRODUCT)),kyleprods)
-    PRODUCT_COPY_FILES += \
-        $(LOCAL_PATH)/proprietary/lib/libbrcm_ril_KYLEPRODS.so:system/lib/libbrcm_ril.so \
-        $(LOCAL_PATH)/proprietary/lib/libril_KYLEPRODS.so:/system/lib/libril.so
-else
-    PRODUCT_COPY_FILES += \
-        $(LOCAL_PATH)/proprietary/lib/libbrcm_ril_KYLEPRO.so:system/lib/libbrcm_ril.so \
-        $(LOCAL_PATH)/proprietary/lib/libril_KYLEPRO.so:/system/lib/libril.so
-endif
+# RIL libs
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/lib/libbrcm_ril_KYLEPRODS.so:system/vendor/lib/libbrcm_ril_KYLEPRODS.so \
+    $(LOCAL_PATH)/proprietary/lib/libril_KYLEPRODS.so:/system/vendor/lib/libril_KYLEPRODS.so \
+    $(LOCAL_PATH)/proprietary/lib/libbrcm_ril_KYLEPRO.so:system/vendor/lib/libbrcm_ril_KYLEPRO.so \
+    $(LOCAL_PATH)/proprietary/lib/libril_KYLEPRO.so:/system/vendor/lib/libril_KYLEPRO.so
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/BCM4330B1_002.001.003.0967.1173.hcd:/system/bin/BCM4330B1_002.001.003.0967.1173.hcd \
