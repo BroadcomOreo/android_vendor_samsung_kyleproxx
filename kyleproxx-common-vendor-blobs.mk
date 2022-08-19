@@ -16,12 +16,12 @@ LOCAL_PATH := vendor/samsung/kyleproxx
 
 ifeq ($(findstring kyleprods,$(TARGET_PRODUCT)),kyleprods)
     PRODUCT_COPY_FILES += \
-        $(LOCAL_PATH)/proprietary/lib/libbrcm_ril_KYLEPRODS.so:system/lib/libbrcm_ril.so \
-        $(LOCAL_PATH)/proprietary/lib/libril_KYLEPRODS.so:/system/lib/libril.so
+        $(LOCAL_PATH)/proprietary/lib/libbrcm_ril_KYLEPRODS.so:system/vendor/lib/libbrcm_ril.so \
+        $(LOCAL_PATH)/proprietary/lib/libril_KYLEPRODS.so:/system/vendor/lib/libril.so
 else
     PRODUCT_COPY_FILES += \
-        $(LOCAL_PATH)/proprietary/lib/libbrcm_ril_KYLEPRO.so:system/lib/libbrcm_ril.so \
-        $(LOCAL_PATH)/proprietary/lib/libril_KYLEPRO.so:/system/lib/libril.so
+        $(LOCAL_PATH)/proprietary/lib/libbrcm_ril_KYLEPRO.so:system/vendor/lib/libbrcm_ril.so \
+        $(LOCAL_PATH)/proprietary/lib/libril_KYLEPRO.so:/system/vendor/lib/libril.so
 endif
 
 PRODUCT_COPY_FILES += \
