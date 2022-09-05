@@ -34,7 +34,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/wlandutservice:/system/bin/wlandutservice \
     $(LOCAL_PATH)/proprietary/etc/Volume.db:/system/etc/Volume.db \
     $(LOCAL_PATH)/proprietary/etc/asound.conf:/system/etc/asound.conf \
-    $(LOCAL_PATH)/proprietary/etc/audio_policy.xml:/system/etc/audio_policy.xml \
+    $(LOCAL_PATH)/proprietary/etc/audio_policy_configuration.xml:/system/etc/audio_policy_configuration.xml \
     $(LOCAL_PATH)/proprietary/etc/gps.conf:/system/etc/gps.conf \
     $(LOCAL_PATH)/proprietary/etc/gps/glconfig.xml:/system/etc/gps/glconfig.xml \
     $(LOCAL_PATH)/proprietary/etc/media_profiles.xml:/system/etc/media_profiles.xml \
